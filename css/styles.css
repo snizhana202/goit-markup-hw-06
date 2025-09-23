@@ -168,16 +168,16 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 188px 0;
+  padding: 72px 0;
 }
 
 .main-title {
   margin-left: auto;
   margin-right: auto;
-  max-width: 496px;
-  margin-bottom: 48px;
+  max-width: 216px;
+  margin-bottom: 72px;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
@@ -212,8 +212,6 @@ img {
 /* -----------------MAIN-ITEM---------------- */
 
 .main-info {
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 
 .main-list {
@@ -280,7 +278,9 @@ img {
 
 .main-team-list {
   display: flex;
-  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 72px 24px;
 }
 
 .main-team-item {
@@ -318,12 +318,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
-}
-
-.main-team-list {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
+  margin-bottom: 8px;
 }
 
 .main-team-socials {
@@ -376,9 +371,9 @@ img {
 }
 
 .main-portfolio-item {
-  width: calc((100% - 2 * 24px) / 3);
-  height: 420px;
-  width: 360px;
+  width: 100%;
+  height: 400px;
+  width: 288px;
   background-color: #fff;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -444,7 +439,7 @@ img {
 /* -----------------MAIN-PORTFOLIO----------------- */
 
 .section {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 /* -----------------FOOTER-------------------- */
@@ -799,6 +794,10 @@ h6 {
     max-width: 768px;
   }
 
+  .main-list {
+    gap: 72px 24px;
+  }
+
   .main-item {
     width: calc((100% - 24px) / 2);
   }
@@ -811,6 +810,26 @@ h6 {
 
   .main-text {
   }
+
+  .main-hero {
+    padding: 112px 0;
+  }
+
+  .main-title {
+    min-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+  }
+
+  .main-portfolio-list {
+    gap: 72px 24px;
+  }
+
+  .main-portfolio-item {
+    width: calc((100% - 24px) / 2);
+    height: 420px;
+    width: 356px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -820,11 +839,11 @@ h6 {
     padding-right: 15px;
   }
 
-.main-info {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-  
+  .main-info {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .main-list {
     gap: 24px;
   }
@@ -839,5 +858,23 @@ h6 {
   }
 
   .main-text {
+  }
+
+  .main-hero {
+    padding: 188px 0;
+  }
+
+  .main-title {
+    margin-bottom: 48px;
+  }
+
+.main-portfolio-list {
+    gap: 48px 24px;
+  }
+
+  .main-portfolio-item {
+    width: calc((100% - 2 * 24px) / 3);
+    height: 420px;
+    width: 360px;
   }
 }
