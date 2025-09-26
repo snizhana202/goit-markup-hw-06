@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo header-logo" href="./index.html"
@@ -58,15 +58,34 @@
             </li>
           </ul>
         </address>
+
+        <button class="menu-btn" type="button">
+          <svg class="menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu ">
+          <div class="mobile-menu-container container">
+            <button class="mobile-menu-close">Close</button>
+            <nav class="mobile-menu-nav">nav</nav>
+            <address>address</address>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main class="main">
       <section class="main-hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="main-button" type="button">Order Service</button>
         </div>
-      </section> 
+      </section>
       <section class="main-info section">
         <div class="container">
           <h2 class="visually-hidden">list</h2>
@@ -121,13 +140,14 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>
       <section class="main-team section">
         <div class="container">
           <h2 class="main-team-title">Our Team</h2>
           <ul class="main-team-list">
             <li class="main-team-item">
               <img
+              srcset="./images/img.jpg 1x, ./images/img-2x.jpg 2x"
                 class="main-team-img"
                 src="./images/img.jpg"
                 alt="Mark Guerrero"
@@ -186,6 +206,7 @@
             </li>
             <li class="main-team-item">
               <img
+              srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 class="main-team-img"
                 src="./images/img1.jpg"
                 alt="Tom Ford"
@@ -244,6 +265,7 @@
             </li>
             <li class="main-team-item">
               <img
+              srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 class="main-team-img"
                 src="./images/img2.jpg"
                 alt="Camila Garcia"
@@ -302,6 +324,7 @@
             </li>
             <li class="main-team-item">
               <img
+              srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 class="main-team-img"
                 src="./images/img3.jpg"
                 alt="Daniel Wilson"
@@ -369,6 +392,7 @@
             <li class="main-portfolio-item">
               <div class="cashless-paiment-cover">
                 <img
+                srcset="./images/img-bank.jpg 1x, ./images/img-bank-2x.jpg 2x"
                   class="main-portfolio-img"
                   src="./images/img-bank.jpg"
                   alt="bank"
@@ -389,6 +413,7 @@
             <li class="main-portfolio-item">
               <div class="cashless-paiment-cover">
                 <img
+                srcset="./images/img-payment.jpg 1x, ./images/img-payment-2x.jpg 2x"
                   src="./images/img-payment.jpg"
                   alt="payment"
                   height="300"
@@ -408,6 +433,7 @@
             <li class="main-portfolio-item">
               <div class="cashless-paiment-cover">
                 <img
+                srcset="./images/img-meditation.jpg 1x, ./images/img-meditation-2x.jpg 2x"
                   src="./images/img-meditation.jpg"
                   alt="meditation"
                   height="300"
@@ -427,6 +453,7 @@
             <li class="main-portfolio-item">
               <div class="cashless-paiment-cover">
                 <img
+                srcset="./images/img-taxi.jpg 1x, ./images/img-taxi-2x.jpg 2x"
                   src="./images/img-taxi.jpg"
                   alt="taxi"
                   height="300"
@@ -446,6 +473,7 @@
             <li class="main-portfolio-item">
               <div class="cashless-paiment-cover">
                 <img
+                srcset="./images/img-screen.jpg 1x, ./images/img-screen-2x.jpg 2x"
                   src="./images/img-screen.jpg"
                   alt="screen"
                   height="300"
@@ -465,6 +493,7 @@
             <li class="main-portfolio-item">
               <div class="cashless-paiment-cover">
                 <img
+                srcset="./images/img-courses.jpg 1x, ./images/img-courses-2x.jpg 2x"
                   src="./images/img-courses.jpg"
                   alt="courses"
                   height="300"
@@ -485,7 +514,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer section">
       <div class="container footer-content">
         <div class="footer-contant">
           <a class="logo footer-logo" href="./index.html"
@@ -560,7 +589,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!-- <div class="overlay is-open">
       <div class="modal">
         <button type="button" class="btn">
