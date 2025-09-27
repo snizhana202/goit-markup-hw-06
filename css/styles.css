@@ -127,6 +127,7 @@ img {
 
 .mobile-menu {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -147,6 +148,12 @@ img {
   pointer-events: auto;
 }
 
+.mobile-menu-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
 .mobile-menu-container {
   position: relative;
   padding-top: 72px;
@@ -157,14 +164,83 @@ img {
   height: 100%;
 }
 
-.mobile-menu-close {
-  position: absolute;
+.menu-close-btn {
+  width: 24px;
+  height: 24px;
   top: 24px;
   right: 24px;
+  position: absolute;
+  border-radius: 100%;
+  background-color: transparent;
+  stroke-width: 1px;
+  color: #2e2f42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
 }
 
 .mobile-menu-nav {
   margin-bottom: auto;
+}
+
+.mobile-menu-list {
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mobile-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.mobile-menu-link:focus {
+  color: #404bbf;
+}
+
+.mobile-menu-contacts {
+}
+
+.mobile-menu-contacts-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.mobile-menu-contacts-item {
+  font-style: normal;
+}
+
+.mobile-menu-contacts-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.mobile-menu-contacts-link:focus {
+  color: #4d5ae5;
+}
+
+.mobile-menu-teamlist {
+  display: flex;
+  gap: 40px;
+}
+
+.mobile-menu-social {
+  width: 40px;
+  height: 40px;
 }
 
 /* -------------HEADER--------------- */
@@ -254,7 +330,7 @@ img {
 .main-subtitle {
   margin-bottom: 8px;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
@@ -610,10 +686,10 @@ img {
 }
 
 .modal {
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   border-radius: 4px;
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
@@ -877,14 +953,24 @@ h6 {
       ),
       url(../images/dark-bg-tab.jpg);
 
-@media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/Dark-bg-tab-2x.jpg);
+    @media screen and (min-resolution: 2x),
+      (-webkit-min-device-pixel-ratio: 2) {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/Dark-bg-tab-2x.jpg);
+    }
   }
 
+  .main-hero {
+    padding: 112px 0;
+  }
+
+  .main-title {
+    min-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
   }
 
   .main-list {
@@ -896,22 +982,7 @@ h6 {
   }
 
   .main-subtitle {
-    font-weight: 700;
-    font-size: 36px;
     text-align: start;
-  }
-
-  .main-text {
-  }
-
-  .main-hero {
-    padding: 112px 0;
-  }
-
-  .main-title {
-    min-width: 496px;
-    margin-bottom: 36px;
-    font-size: 56px;
   }
 
   .main-portfolio-list {
@@ -974,6 +1045,12 @@ h6 {
   .footer-svg {
     margin-left: 0;
   }
+
+  .modal {
+    padding: 72px 24px 24px 24px;
+    width: 408px;
+    min-height: 584px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1007,14 +1084,14 @@ h6 {
       ),
       url(../images/people-office.jpg);
 
-@media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../images/people-office-2x.jpg);
-  }
-
+    @media screen and (min-resolution: 2x),
+      (-webkit-min-device-pixel-ratio: 2) {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
   }
 
   .main-info {
