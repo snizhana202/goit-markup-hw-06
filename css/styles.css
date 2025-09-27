@@ -1053,6 +1053,10 @@ h6 {
     width: 408px;
     min-height: 584px;
   }
+
+  .modal-check-label {
+    display: inline;
+  }
 }
 
 @media screen and (min-width: 1158px) {
